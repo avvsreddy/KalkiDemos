@@ -60,12 +60,13 @@
     }
 
 
-    class CSharpLanguage : ILanguage 
+    abstract public class OOLanguage : ILanguage
     {
-        public string GetName()
-        {
-            return "C# Language";
-        }
+
+        abstract public string GetName();
+        //{
+        //    return "Object Oriented Language";
+        //}
         public string GetUnit()
         {
             return "Class";
@@ -76,20 +77,38 @@
         }
     }
 
-    class JavaLanguage : ILanguage
+    class CSharpLanguage : OOLanguage
     {
-        public string GetName()
+        public override string GetName()
+        {
+            return "C# Language";
+        }
+
+       
+        //public string GetUnit()
+        //{
+        //    return "Class";
+        //}
+        //public string GetParadigm()
+        //{
+        //    return "Object-Oriented";
+        //}
+    }
+
+    class JavaLanguage : OOLanguage
+    {
+        public override string GetName()
         {
             return "Java Language";
         }
-        public string GetUnit()
-        {
-            return "Class";
-        }
-        public string GetParadigm()
-        {
-            return "Object-Oriented";
-        }
+        //public string GetUnit()
+        //{
+        //    return "Class";
+        //}
+        //public string GetParadigm()
+        //{
+        //    return "Object-Oriented";
+        //}
     }
 
     class CLanguage : ILanguage
