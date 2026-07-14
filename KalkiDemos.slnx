@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/MyApp/" />
+  <Folder Name="/MyApp/Business Layer/">
+    <Project Path="MyMathLibrary/MyMathLibrary.csproj" />
+  </Folder>
+  <Folder Name="/MyApp/Presentation Layer/">
+    <Project Path="MyDesktopApp/MyDesktopApp.csproj" />
+    <Project Path="MySecondConsoleApp/MySecondConsoleApp.csproj" />
+  </Folder>
+  <Project Path="CollectionsDemo/CollectionsDemo.csproj" Id="4c5173e1-1003-439b-8f9a-3d254bfe5326" />
+  <Project Path="ConsoleApp1/ConsoleApp1.csproj" Id="45167bb9-495d-4fe1-8fca-57413212684d" />
+  <Project Path="DynamicCollectionsDemo/DynamicCollectionsDemo.csproj" Id="0c581154-8576-4935-b681-94ab99b4553c" />
+  <Project Path="DynamicCollectionsDemo2/DynamicCollectionsDemo2.csproj" Id="21ce5bff-5cce-4914-9fc3-9f43daca5aab" />
+  <Project Path="ExceptionsDemo/ExceptionsDemo.csproj" Id="91fc1ab9-d06b-469c-9105-5f77feff6ac3" />
+  <Project Path="LearnCSLanguage/LearnCSLanguage.csproj" />
+</Solution>
