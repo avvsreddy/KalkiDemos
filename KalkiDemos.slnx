@@ -15,6 +15,7 @@
   <Project Path="IDEApp/IDEApp.csproj" Id="b31e974e-1166-4bce-8de6-70f9cccdde2d" />
   <Project Path="LearnCSLanguage/LearnCSLanguage.csproj" />
   <Project Path="OODemo1/OODemo1.csproj" Id="91f1080a-0a42-4386-978e-f3d3638883dd" />
+  <Project Path="ProductsManagementConsoleApp/ProductsManagementConsoleApp.csproj" Id="4e2e126c-c8a6-45c2-a4b0-e675bdf90516" />
   <Project Path="Ref/Ref.csproj" Id="0b4d3aa3-db2c-4efe-935d-7331a5d4b6ab" />
   <Project Path="TrainingApp/TrainingApp.csproj" Id="2f01ed57-78df-45db-8730-f173f2bddaec" />
 </Solution>
