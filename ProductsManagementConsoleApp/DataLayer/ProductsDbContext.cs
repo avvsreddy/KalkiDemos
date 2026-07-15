@@ -17,5 +17,6 @@ namespace ProductsManagementConsoleApp.DataLayer
 
         // Map the entity class to a database table
         public DbSet<Product> Products { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
     }
 }

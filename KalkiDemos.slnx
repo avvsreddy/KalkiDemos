@@ -1,21 +1,33 @@
 <Solution>
-  <Folder Name="/MyApp/" />
-  <Folder Name="/MyApp/Business Layer/">
+  <Folder Name="/Demos/">
+    <Project Path="CollectionsDemo/CollectionsDemo.csproj" Id="4c5173e1-1003-439b-8f9a-3d254bfe5326" />
+    <Project Path="ConsoleApp1/ConsoleApp1.csproj" Id="45167bb9-495d-4fe1-8fca-57413212684d" />
+    <Project Path="DynamicCollectionsDemo/DynamicCollectionsDemo.csproj" Id="0c581154-8576-4935-b681-94ab99b4553c" />
+    <Project Path="DynamicCollectionsDemo2/DynamicCollectionsDemo2.csproj" Id="21ce5bff-5cce-4914-9fc3-9f43daca5aab" />
+    <Project Path="ExceptionsDemo/ExceptionsDemo.csproj" Id="91fc1ab9-d06b-469c-9105-5f77feff6ac3" />
+    <Project Path="IDEApp/IDEApp.csproj" Id="b31e974e-1166-4bce-8de6-70f9cccdde2d" />
+    <Project Path="LearnCSLanguage/LearnCSLanguage.csproj" />
+    <Project Path="OODemo1/OODemo1.csproj" Id="91f1080a-0a42-4386-978e-f3d3638883dd" />
+    <Project Path="ProductsManagementConsoleApp/ProductsManagementConsoleApp.csproj" Id="4e2e126c-c8a6-45c2-a4b0-e675bdf90516" />
+    <Project Path="Ref/Ref.csproj" Id="0b4d3aa3-db2c-4efe-935d-7331a5d4b6ab" />
+    <Project Path="TrainingApp/TrainingApp.csproj" Id="2f01ed57-78df-45db-8730-f173f2bddaec" />
+  </Folder>
+  <Folder Name="/Demos/MyApp/" />
+  <Folder Name="/Demos/MyApp/Business Layer/">
     <Project Path="MyMathLibrary/MyMathLibrary.csproj" />
   </Folder>
-  <Folder Name="/MyApp/Presentation Layer/">
+  <Folder Name="/Demos/MyApp/Presentation Layer/">
     <Project Path="MyDesktopApp/MyDesktopApp.csproj" />
     <Project Path="MySecondConsoleApp/MySecondConsoleApp.csproj" />
   </Folder>
-  <Project Path="CollectionsDemo/CollectionsDemo.csproj" Id="4c5173e1-1003-439b-8f9a-3d254bfe5326" />
-  <Project Path="ConsoleApp1/ConsoleApp1.csproj" Id="45167bb9-495d-4fe1-8fca-57413212684d" />
-  <Project Path="DynamicCollectionsDemo/DynamicCollectionsDemo.csproj" Id="0c581154-8576-4935-b681-94ab99b4553c" />
-  <Project Path="DynamicCollectionsDemo2/DynamicCollectionsDemo2.csproj" Id="21ce5bff-5cce-4914-9fc3-9f43daca5aab" />
-  <Project Path="ExceptionsDemo/ExceptionsDemo.csproj" Id="91fc1ab9-d06b-469c-9105-5f77feff6ac3" />
-  <Project Path="IDEApp/IDEApp.csproj" Id="b31e974e-1166-4bce-8de6-70f9cccdde2d" />
-  <Project Path="LearnCSLanguage/LearnCSLanguage.csproj" />
-  <Project Path="OODemo1/OODemo1.csproj" Id="91f1080a-0a42-4386-978e-f3d3638883dd" />
-  <Project Path="ProductsManagementConsoleApp/ProductsManagementConsoleApp.csproj" Id="4e2e126c-c8a6-45c2-a4b0-e675bdf90516" />
-  <Project Path="Ref/Ref.csproj" Id="0b4d3aa3-db2c-4efe-935d-7331a5d4b6ab" />
-  <Project Path="TrainingApp/TrainingApp.csproj" Id="2f01ed57-78df-45db-8730-f173f2bddaec" />
+  <Folder Name="/KnowledgeHubPortal/" />
+  <Folder Name="/KnowledgeHubPortal/API Layer/">
+    <Project Path="KnowledgeHubPortal.API/KnowledgeHubPortal.API.csproj" Id="ab7f54c4-557b-4266-b991-3734f677556b" />
+  </Folder>
+  <Folder Name="/KnowledgeHubPortal/Business Layer/">
+    <Project Path="KnowledgeHubPortal.Business/KnowledgeHubPortal.Business.csproj" Id="5b6e4903-bb14-406e-8822-c901280cc3a0" />
+  </Folder>
+  <Folder Name="/KnowledgeHubPortal/Data Layer/">
+    <Project Path="KnowledgeHubPortal.Data/KnowledgeHubPortal.Data.csproj" Id="4cdd167d-1b94-4c7e-b3c3-1066f85ff063" />
+  </Folder>
 </Solution>

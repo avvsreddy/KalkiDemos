@@ -19,23 +19,79 @@ namespace ProductsManagementConsoleApp
 
             // Step 5: Implement CRUD operations for the Product class using EF Core
 
+            search();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+        private static void search()
+        {
+            // Get all proudcts price >60000
+            ProductsDbContext db = new ProductsDbContext();
+            // SQL: SELECT * FROM Products WHERE Price > 60000 orderby Price desc
+            // LINQ: Language Integrated Query
+
+            var products = from p in db.Products
+                           where p.Price > 60000
+                           orderby p.Price descending
+                           select p;
+
+            foreach (var product in products)
+            {
+                Console.WriteLine($"Id: {product.ProductID}, Name: {product.Name}, Description: {product.Description}, Price: {product.Price}");
+            }
+        }
+
+        private static void GetAllProducts()
+        {
+            // Get all products and display
+            // use LINQ = Language Integrated Query
+            // SQL: SELECT * FROM Products
+
+            ProductsDbContext db = new ProductsDbContext();
+            var allProducts = db.Products;
+
+            foreach (var product in allProducts)
+            {
+                Console.WriteLine($"Id: {product.ProductID}, Name: {product.Name}, Description: {product.Description}, Price: {product.Price}");
+            }
+        }
+
+        private static void Update()
+        {
             // Update
             // get the product to update
             ProductsDbContext db = new ProductsDbContext();
             Product productToUpdate = db.Products.Find(2); // Assuming the product with ID 2 exists
-            if (productToUpdate != null) 
+            if (productToUpdate != null)
             {
                 productToUpdate.Name = "I Phone 15 Pro Max";
                 productToUpdate.Price = 88888;
                 db.Products.Update(productToUpdate); // use this in disconnected scenario, otherwise it is not required
                 db.SaveChanges();
             }
-            else 
+            else
             {
                 Console.WriteLine("Product Not Found");
             }
-
-
         }
 
         private static void Delete()
