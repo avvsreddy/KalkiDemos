@@ -23,10 +23,17 @@ namespace KalkiTechProductsCatalogService.Controllers
         // GET https://www.kt.com/api/ProductsCatalog/54
         [HttpGet]
         [Route("{id:int}")]
-        public Product GetProudctById(int id)
+        public IActionResult GetProudctById(int id)
         {
             var product = from p in GetProductsFromDatabase() where p.ProductId == id select p;
-            return product.FirstOrDefault();
+            if(product == null) 
+            {
+                // return 404 - product not found
+                return NotFound("Product not found");
+            }
+            
+            // return product with 200
+            return Ok(product.FirstOrDefault());
         }
 
         // get products by category
@@ -35,10 +42,15 @@ namespace KalkiTechProductsCatalogService.Controllers
 
         [HttpGet]
         [Route("category/{category}")]
-        public List<Product> GetProductsByCategory(string category)
+        public IActionResult GetProductsByCategory(string category)
         {
             var products = from p in GetProductsFromDatabase() where p.Category.Contains(category) select p;
-            return products.ToList();
+
+            if(!products.Any())
+            {
+                return NotFound("No products found in this category");
+            };
+            return Ok(products.ToList());
         }
 
 

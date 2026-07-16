@@ -8,10 +8,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.10" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\KnowledgeHubPortal.Business\KnowledgeHubPortal.Business.csproj" />
+    <ProjectReference Include="..\KnowledgeHubPortal.Data\KnowledgeHubPortal.Data.csproj" />
   </ItemGroup>
 
 </Project>
