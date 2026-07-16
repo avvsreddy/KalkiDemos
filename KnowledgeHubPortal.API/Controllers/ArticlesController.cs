@@ -1,6 +1,7 @@
 ﻿using KnowledgeHubPortal.Business.DTO;
 using KnowledgeHubPortal.Business.Entities;
 using KnowledgeHubPortal.Business.Interfaces;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -73,6 +74,7 @@ namespace KnowledgeHubPortal.API.Controllers
         // browse articles endpoint
         [HttpGet]
         [Route("browse")]
+        //[EnableCors("AllowAll")]
         public IActionResult BrowseArticles(int categoryId)
         {
             var articles = articlesRepository.BrowseArticles(categoryId);
