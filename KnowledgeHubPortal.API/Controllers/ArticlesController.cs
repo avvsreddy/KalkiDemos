@@ -1,4 +1,5 @@
-﻿using KnowledgeHubPortal.Business.Entities;
+﻿using KnowledgeHubPortal.Business.DTO;
+using KnowledgeHubPortal.Business.Entities;
 using KnowledgeHubPortal.Business.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -18,8 +19,20 @@ namespace KnowledgeHubPortal.API.Controllers
         // submit article endpoint
         [HttpPost]
         [Route("submit")]
-        public IActionResult SubmitArticle(Article article)
+        public IActionResult SubmitArticle(ArticleSubmitDTO articleDto)
         {
+            Article article = new Article // Use AutoMapper or manual mapping to convert DTO to entity
+            {
+                Title = articleDto.Title,
+                ArticleUrl = articleDto.ArticleUrl,
+                Description = articleDto.Description,
+                CategoryId = articleDto.CategoryID,
+                IsApproved = false, // default to false
+                PostedBy = "Anonymous", // default to anonymous - replace with logged-in user info if available
+                DateCreated = DateTime.UtcNow,
+                IsDeleted = false // default to false
+            };
+
             // Call the repository to submit the article
             articlesRepository.SubmitArticle(article);
             return CreatedAtAction(nameof(SubmitArticle), new { id = article.ArticleID }, article);
