@@ -1,4 +1,6 @@
 
+using KnowledgeHubPortal.Business.Interfaces;
+using KnowledgeHubPortal.Data;
 using Microsoft.OpenApi;
 
 namespace KnowledgeHubPortal.API
@@ -31,6 +33,11 @@ namespace KnowledgeHubPortal.API
                 });
             });
 
+
+            builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+            builder.Services.AddScoped<IArticlesRepository, ArticlesRepository>();
+            //builder.Services.AddSingleton<ICategoryRepository, CategoryRepository>();
+            //builder.Services.AddTransient<ICategoryRepository, CategoryRepository>();
 
 
 
