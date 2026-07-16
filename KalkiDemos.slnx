@@ -6,6 +6,7 @@
     <Project Path="DynamicCollectionsDemo2/DynamicCollectionsDemo2.csproj" Id="21ce5bff-5cce-4914-9fc3-9f43daca5aab" />
     <Project Path="ExceptionsDemo/ExceptionsDemo.csproj" Id="91fc1ab9-d06b-469c-9105-5f77feff6ac3" />
     <Project Path="IDEApp/IDEApp.csproj" Id="b31e974e-1166-4bce-8de6-70f9cccdde2d" />
+    <Project Path="KalkiTechProductsCatalogService/KalkiTechProductsCatalogService.csproj" Id="d85fa31a-dc68-495f-9d80-b2a988496970" />
     <Project Path="LearnCSLanguage/LearnCSLanguage.csproj" />
     <Project Path="OODemo1/OODemo1.csproj" Id="91f1080a-0a42-4386-978e-f3d3638883dd" />
     <Project Path="ProductsManagementConsoleApp/ProductsManagementConsoleApp.csproj" Id="4e2e126c-c8a6-45c2-a4b0-e675bdf90516" />
